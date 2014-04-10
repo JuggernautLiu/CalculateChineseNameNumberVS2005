@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Main", "Main\Main.vcproj", "{39EF2171-9142-4AE3-B24A-821552D0BB24}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CalculateChineseNameProcessor", "CalculateChineseNameProcessor\CalculateChineseNameProcessor.vcproj", "{292421D1-09EC-4350-A133-2CEAB26F883E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest", "UnitTest\UnitTest.vcproj", "{0142E6BF-0067-40AB-9DCA-4AC4553C67BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{292421D1-09EC-4350-A133-2CEAB26F883E} = {292421D1-09EC-4350-A133-2CEAB26F883E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39EF2171-9142-4AE3-B24A-821552D0BB24}.Debug|Win32.ActiveCfg = Debug|Win32
+		{39EF2171-9142-4AE3-B24A-821552D0BB24}.Debug|Win32.Build.0 = Debug|Win32
+		{39EF2171-9142-4AE3-B24A-821552D0BB24}.Release|Win32.ActiveCfg = Release|Win32
+		{39EF2171-9142-4AE3-B24A-821552D0BB24}.Release|Win32.Build.0 = Release|Win32
+		{292421D1-09EC-4350-A133-2CEAB26F883E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{292421D1-09EC-4350-A133-2CEAB26F883E}.Debug|Win32.Build.0 = Debug|Win32
+		{292421D1-09EC-4350-A133-2CEAB26F883E}.Release|Win32.ActiveCfg = Release|Win32
+		{292421D1-09EC-4350-A133-2CEAB26F883E}.Release|Win32.Build.0 = Release|Win32
+		{0142E6BF-0067-40AB-9DCA-4AC4553C67BA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0142E6BF-0067-40AB-9DCA-4AC4553C67BA}.Debug|Win32.Build.0 = Debug|Win32
+		{0142E6BF-0067-40AB-9DCA-4AC4553C67BA}.Release|Win32.ActiveCfg = Release|Win32
+		{0142E6BF-0067-40AB-9DCA-4AC4553C67BA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
