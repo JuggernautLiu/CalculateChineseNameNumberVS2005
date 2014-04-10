@@ -4,18 +4,22 @@
 static int index = 0;
 TestNameProfile::TestNameProfile(void)
 {
+    int i = 0;
 }
 
 TestNameProfile::~TestNameProfile(void)
 {
+    int i = 0;
 }
 
 void TestNameProfile::SetUp()
 {
+    int i = 0;
 }
 
 void TestNameProfile::TearDown()
 {
+    int i = 0;
     index++;
 }
 
@@ -73,6 +77,21 @@ TEST(TestNameProfile,SETGETNumberBoundary)
     EXPECT_EQ(expectedName2,nameprofile.Get_name2_num());
 }
 
+TEST(TestNameProfile,FinishSetting)
+{
+    bool expectedbool = true;
+    int expectedsum = 31;
+
+    NameProfile nameprofile(15);
+    nameprofile.Set_name1_num(10);
+    nameprofile.Set_name2_num(6);
+
+    bool isfinish = nameprofile.FinishSetting();
+    int sum = nameprofile.Get_sum_num();
+
+    EXPECT_EQ(expectedbool,isfinish);
+    EXPECT_EQ(expectedsum,sum);
+}
 // Affect static int , so move it to the last.
 TEST(TestNameProfile,LIMIT_Number_Modify)
 {
