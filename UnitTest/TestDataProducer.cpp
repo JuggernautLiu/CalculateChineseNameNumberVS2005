@@ -1,19 +1,62 @@
+#pragma once
 #include "StdAfx.h"
-#include "TestDataProducer.h"
+#include "gtest/gtest.h"
+#include "gmock/gmock.h"
+#include "IDataProducer.h"
+#include "NameProfile.h"
 
-TestDataProducer::TestDataProducer(void)
+using namespace std;
+class TestDataProducer : public ::testing::Test
 {
-}
+protected:
+    // Per-test-case set-up.
+    // Called before the first test in this test case.
+    // Can be omitted if not needed.
+    static void SetUpTestCase() {
+    }
+    // Per-test-case tear-down.
+    // Called after the last test in this test case.
+    // Can be omitted if not needed.
+    static void TearDownTestCase() {
+    }
+    virtual void SetUp(){
+    };
+    virtual void TearDown(){
+    };
+};
 
-TestDataProducer::~TestDataProducer(void)
+class TestDataProducerByCount : public TestDataProducer
 {
-}
+protected:
+    // Per-test-case set-up.
+    // Called before the first test in this test case.
+    // Can be omitted if not needed.
+    static void SetUpTestCase() {
+    }
+    // Per-test-case tear-down.
+    // Called after the last test in this test case.
+    // Can be omitted if not needed.
+    static void TearDownTestCase() {
+    }
+    virtual void SetUp(){
+    };
+    virtual void TearDown(){
+    };
+};
 
-void TestDataProducer::SetUp()
+TEST_F(TestDataProducerByCount,ProduceNameProfiles)
 {
-}
+    DataProducerByCount producer;
+    NameProfileCfg cfg;
+    cfg.lastname_num = 15;
+    cfg.limit_maxNumber = 5;
+    cfg.limit_minNumber = 1;
+    producer.SetNameProfileCfg(cfg);
+    
+    vector<NameProfile> vec;
+    bool isok = producer.ProduceNameProfiles(vec);
+    ASSERT_TRUE(isok);
 
-void TestDataProducer::TearDown()
-{
+    int expectvec_count = 25;
+    EXPECT_EQ(expectvec_count,vec.size());
 }
-

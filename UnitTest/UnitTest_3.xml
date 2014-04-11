@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="7" failures="0" disabled="0" errors="0" timestamp="2014-04-11T18:17:12" time="50.278" name="AllTests">
+  <testsuite name="TestLoadSettings" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="TEST_LoadSettings_LoadSettings" status="run" time="0" classname="TestLoadSettings" />
+  </testsuite>
+  <testsuite name="TestDataProducerByCount" tests="1" failures="0" disabled="0" errors="0" time="50.275">
+    <testcase name="ProduceNameProfiles" status="run" time="50.275" classname="TestDataProducerByCount" />
+  </testsuite>
+  <testsuite name="TestNameProfile" tests="5" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="LIMIT_Number" status="run" time="0" classname="TestNameProfile" expectedlimit_max="22" expectedlimit_min="1" />
+    <testcase name="LIMIT_Number_Modify" status="run" time="0" classname="TestNameProfile" />
+    <testcase name="SETGETNumber" status="run" time="0" classname="TestNameProfile" />
+    <testcase name="SETGETNumberBoundary" status="run" time="0" classname="TestNameProfile" />
+    <testcase name="FinishSetting" status="run" time="0" classname="TestNameProfile" />
+  </testsuite>
+</testsuites>

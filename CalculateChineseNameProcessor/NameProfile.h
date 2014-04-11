@@ -31,3 +31,11 @@ private:
 
     void Cal_allSumNum();
 };
+
+class NameProfileCfg
+{
+public:
+    int limit_maxNumber;
+    int limit_minNumber;
+    int lastname_num;
+};

@@ -229,22 +229,6 @@
 				RelativePath=".\stdafx.h"
 				>
 			</File>
-			<File
-				RelativePath=".\TestDataProducer.h"
-				>
-			</File>
-			<File
-				RelativePath=".\TestLoadSettings.h"
-				>
-			</File>
-			<File
-				RelativePath=".\TestNameProfile.h"
-				>
-			</File>
-			<File
-				RelativePath=".\TestRuleFilter.h"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"

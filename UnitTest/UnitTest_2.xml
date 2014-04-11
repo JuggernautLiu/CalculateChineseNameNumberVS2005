@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="7" failures="1" disabled="0" errors="0" timestamp="2014-04-11T18:05:32" time="10.353" name="AllTests">
+  <testsuite name="TestLoadSettings" tests="1" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="TEST_LoadSettings_LoadSettings" status="run" time="0" classname="TestLoadSettings" />
+  </testsuite>
+  <testsuite name="TestDataProducerByCount" tests="1" failures="1" disabled="0" errors="0" time="10.345">
+    <testcase name="ProduceNameProfiles" status="run" time="10.345" classname="TestDataProducerByCount">
+      <failure message="d:\projects\code\cppcode\calculatechinesenamenumbervs2005\unittest\testdataproducer.cpp:58&#x0A;Value of: isok&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[d:\projects\code\cppcode\calculatechinesenamenumbervs2005\unittest\testdataproducer.cpp:58
+Value of: isok
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="TestNameProfile" tests="5" failures="0" disabled="0" errors="0" time="0.003">
+    <testcase name="LIMIT_Number" status="run" time="0" classname="TestNameProfile" expectedlimit_max="22" expectedlimit_min="1" />
+    <testcase name="LIMIT_Number_Modify" status="run" time="0" classname="TestNameProfile" />
+    <testcase name="SETGETNumber" status="run" time="0" classname="TestNameProfile" />
+    <testcase name="SETGETNumberBoundary" status="run" time="0" classname="TestNameProfile" />
+    <testcase name="FinishSetting" status="run" time="0" classname="TestNameProfile" />
+  </testsuite>
+</testsuites>

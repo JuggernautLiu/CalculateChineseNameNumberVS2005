@@ -9,3 +9,8 @@ IDataProducer::IDataProducer(void)
 IDataProducer::~IDataProducer(void)
 {
 }
+
+void IDataProducer::SetNameProfileCfg(NameProfileCfg cfg)
+{    
+    nameprofilecfg = cfg;
+}
